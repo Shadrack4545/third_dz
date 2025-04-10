@@ -1,14 +1,13 @@
 <template>
-    <div class="banner">Banner</div>
+    <div class="banner">This is a Banner</div>
   </template>
   
-  <style scoped>
+  <style lang="scss" scoped>
+  @use '@/assets/styles/mixins.scss' as *;
+  
   .banner {
-    background: green;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+    @include card-style(lightblue);
+    font-family: 'Open Sans', sans-serif; 
   }
   </style>
   

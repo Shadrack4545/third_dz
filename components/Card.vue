@@ -1,16 +1,15 @@
 <template>
     <div class="card">
-      <slot></slot>
+      <slot>This is a Card</slot>
     </div>
   </template>
   
-  <style scoped>
+  <style lang="scss" scoped>
+  @use '@/assets/styles/mixins.scss' as *;
+  
   .card {
-    background: lightgreen;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    display: inline-block;
+    @include card-style(lightgreen);
+    font-family: 'Open Sans', sans-serif;  
   }
   </style>
   

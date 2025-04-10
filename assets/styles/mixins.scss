@@ -1,0 +1,11 @@
+$primary: blue;
+
+@mixin card-style($bg-color: gray) {
+  background-color: $bg-color;
+  border: 2px solid $primary;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+}
